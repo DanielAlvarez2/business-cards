@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-
+        @font-face{
+            font-family: 'beasigne';
+            src: url('BEASIGNE.otf')
+        }
         .raleway{
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
@@ -27,6 +30,7 @@
             min-height:100vh;
         }
         #wrapper{
+            position:relative;
             display:grid;
             place-content: center;
             border:1px solid black;
@@ -38,17 +42,34 @@
             font-size:30px;
             font-weight:500;
         }
+        #info{
+            font-family: beasigne;
+            font-size: 325px;
+            position: relative;
+            top:-10px;
+        }
+        #toggle{
+            left:15px;
+            top:15px;
+            z-index: -1;
+            width:300px;
+            height:160px;
+            border:35px solid red;
+            background: blue;
+            border-radius:75px;
+            position:absolute;
+        }
+        a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <div style="position:fixed;top:5px;right:5px;"><a href="back.html">back</a></div>
+    <div style="position:fixed;top:5px;right:5px;"><a href="index.html">front</a></div>
     <div id="wrapper">
-        <div id="info" class="raleway">
-            <div id="name">DANIEL ALVAREZ</div>
-            Software Engineer<br>
-            ToggleSoftware.com<br>
-            (702) 513-1689<br>
-            daniel.alvarez@togglesoftware.com    
+        <div id="toggle"></div>
+        <div id="info">
+            o
         </div>
     </div>
 </body>
