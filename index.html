@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+
+        .raleway{
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        }
         *{
             margin:0;
             padding:0;
@@ -17,19 +27,28 @@
             min-height:100vh;
         }
         #wrapper{
+            display:grid;
+            place-content: center;
             border:1px solid black;
             width:3.5in;
             height:2in;
+            text-align: center;
+        }
+        #name{
+            font-size:30px;
+            font-weight:500;
         }
     </style>
 </head>
 <body>
     <div id="wrapper">
-        DANIEL ALVAREZ<br>
-        Software Engineer<br>
-        ToggleSoftware.com<br>
-        (702) 513-1689<br>
-        daniel.alvarez@togglesoftware.com
+        <div id="info" class="raleway">
+            <div id="name">DANIEL ALVAREZ</div>
+            Software Engineer<br>
+            ToggleSoftware.com<br>
+            (702) 513-1689<br>
+            daniel.alvarez@togglesoftware.com    
+        </div>
     </div>
 </body>
 </html>
