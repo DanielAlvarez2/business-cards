@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-
+        @font-face{
+            font-family: 'beasigne';
+            src: url('BEASIGNE.otf')
+        }
         .raleway{
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
@@ -33,25 +36,40 @@
             width:3.5in;
             height:2in;
             text-align: center;
+            
+            
         }
         #name{
-            font-size:30px;
+            font-size:18px;
             font-weight:500;
+            font-family: beasigne;
         }
         a{
             text-decoration: none;
+        }
+        #bg{
+            background:lightgrey;
+            width:3in;
+            height:1.85in;
+            display:grid;
+            place-content: center;
+        }
+        #title{
+            font-size:20px;
         }
     </style>
 </head>
 <body>
     <div style="position:fixed;top:5px;right:5px;"><a href="back.html">back</a></div>
     <div id="wrapper">
-        <div id="info" class="raleway">
-            <div id="name">DANIEL ALVAREZ</div>
-            Software Engineer<br>
-            ToggleSoftware.com<br>
-            (702) 513-1689<br>
-            daniel.alvarez@togglesoftware.com    
+        <div id="bg">
+            <div id="info" class="raleway">
+                <div id="name">DANIEL ALVAREZ</div>
+                <div id="title">SOFTWARE ENGINEER</div>
+                ToggleSoftware.com<br>
+                (702) 513-1689<br>
+                daniel.alvarez@togglesoftware.com    
+            </div>
         </div>
     </div>
 </body>
