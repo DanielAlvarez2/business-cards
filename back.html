@@ -48,7 +48,7 @@
             position: relative;
             top:-10px;
         }
-        #toggle{
+        #flex{
             left:15px;
             top:15px;
             z-index: -1;
@@ -59,21 +59,44 @@
             border-radius:75px;
             position:absolute;
             padding:15px;
-            text-align: left;
+            display:flex;
+            gap:10px;
         }
         a{
             text-decoration: none;
         }
         img{
             width:60px;
+            border:5px solid black;
+            border-radius: 50%;
+        }
+        #toggle{
+            font-family: beasigne;
+            font-size: 25px;
+        }
+        #software{
+            font-family: beasigne;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        #url{
+            font-family: arial;
+            font-weight: 100;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <div style="position:fixed;top:5px;right:5px;"><a href="index.html">front</a></div>
     <div id="wrapper">
-        <div id="toggle">
+        <div id="flex">
             <div id="qr"><img src="qr.png"></div>
+            <div id="text">
+                <div id="toggle">toggle</div>
+                <div id="software">SOFTWARE</div>
+                <div id="url">togglesoftware.com</div>
+
+            </div>
         </div>
         
     </div>
